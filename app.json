@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "webview-app",
-    "slug": "webview-app",
+    "name": "Whiteboard App",
+    "slug": "white-board-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mynkashh.webviewapp",
+      "intentFilters": [
+        {
+          "action": "MAIN",
+          "category": [
+            "LAUNCHER",
+            "LEANBACK_LAUNCHER"
+          ]
+        }
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +46,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2597831a-b29b-4cec-b853-fbe4abc5376e"
+      }
     }
   }
 }
